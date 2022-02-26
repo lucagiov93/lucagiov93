@@ -1,0 +1,59 @@
+h1{
+    background-color: blue;
+}
+
+h1:hover{
+    background-color: aqua;
+}
+
+h2{
+    background-color: green;
+}
+h2:hover{
+    background-color: red;
+}
+
+h3{
+    background-color: yellow;
+}
+
+h3:hover{
+  background-color: blueviolet;
+}
+
+h4{
+    background-color: orange;
+}
+
+h4:hover{
+    display: none;
+}
+
+h5{
+    background-color: brown;
+}
+
+h6{
+    background-color: black;
+}
+
+h7{
+    background-color: gray;
+}
+
+.box1{
+
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    
+}
+
+.box2{
+
+    background-color: blue;
+    opacity: 0.9;
+    height: 100px;
+    width: 100px;
+}

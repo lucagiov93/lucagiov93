@@ -1,0 +1,109 @@
+body{
+    overflow: scroll;
+}
+
+h1{
+    display: inline;
+}
+
+div.head
+{
+    top: 0;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-color: blue white blue white;
+    background-color: whitesmoke;
+}
+
+div.title
+{
+    display: inline;
+    text-align: center;
+    margin-right: 30%;
+}
+
+div.menù
+{
+    
+    margin-top: auto;
+    display: inline;
+    margin-bottom: auto;
+}
+
+div>a
+{
+    margin-left: 15px;
+}
+
+
+
+div.immagine>img
+{
+    z-index: -1;
+    height: 500px;
+    width: 100%;
+}
+
+div.central
+{
+   background-color: aquamarine;   
+   height: 300px;
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.frame1, .frame2 
+{
+  float: left;
+  display: inline;
+  
+   
+  margin: 10px;
+  
+  
+}
+
+
+
+.container
+{
+   height: 220px;
+   width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.img-frame>img
+{
+    float: left;
+    height: 200px;
+    width: 200px;   
+    padding-left: 10px; 
+}
+
+.container-foot
+{
+    height: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button
+{
+    height: 30px;
+    width: 100px;
+    background-color: blueviolet;
+    border: none;
+}
+
+button:hover{
+    background-color: aquamarine;
+    
+}

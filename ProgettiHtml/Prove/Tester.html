@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <a href="https://it.wikipedia.org/wiki/Pirateria#Medioevo">Link</a> <!-- Dettagli nel file link test link esterno a parola esterna-->
+   
+        <form action="link" method="post">
+        
+            <p>prova</p>
+            <input type="file" name="identificatore" /> <!-- Dettagli nel file moduli test input-->
+                                                        
+            <input type="submit" value="Submit" />  
+        
+            
+        </form>
+        <br />
+        <br />
+
+        <label>Age: <input type="text" name="age" /> </label> <!-- informazioni in moduli test delle label-->
+        <br />
+        Gender:
+        
+        <input id="female" type="radio" name="gender" value="f" />
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m" />
+        <label for="male">Male</label>
+
+        <br />
+        <br />
+
+        <br />
+        <br />
+
+        <form action="http://www.example.org/profile.php" method="post"> <!-- Informazioni in moduli test del controllo required-->
+           <fieldset> 
+             <label>
+                Username: <br />
+                <input type="text" name="Username" required="required" />
+             </label>
+             <br />
+             <label>
+                 Password: <br />
+                 <input type="password" name="Password" required="required" />
+             </label>
+             <input type="submit" value="Submit" />
+           </fieldset>
+        </form>
+        <br />
+        <br />
+
+        <br />
+        <br />
+
+        <form action="link" method="post">  <!-- Informazioni in moduli test delle date-->
+            <label for="depart">Partenza</label>
+            <input type="date" name="depart" id="depart" /> 
+            <input type="submit" value="Submit" />
+
+        </form>
+        
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <p>&lt</p>
+    </body>
+</html>

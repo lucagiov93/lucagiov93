@@ -1,0 +1,83 @@
+<html>
+    <body>
+    
+        <table> <!-- Tag per la creazione di una table/tabella-->
+            <tr> <!--Indica la creazione di una nuova riga-->
+                <td> <!--ognuno di questi prende posto nella riga e si incolonna, è come se fosse una colonna sulla riga creata-->
+                    testo o valori
+                </td>
+                <td> <!--seconda colonna-->
+                    testo o valori
+                </td>
+            </tr>
+            <tr><!--Nuova riga-->
+                <td> <!--Nuova colonna-->
+                    testo o valori
+                </td>
+                <td><!--Nuova colonna-->
+                    testo o valori
+                </td>
+            </tr>
+        </table>
+    
+        <table>
+            
+            <tr>
+                <th></th>             <!--Non mettendo niente si fa uno spazio vuoto-->
+                <th scope="col"></th> <!--Fa da titolo in questo caso alla 1° colonna, il secondo che metto farà da titolo alla seconda colonna-->
+                <th scope="row"></th> <!--Fa da titolo in questo caso alla 1° riga, il secondo che metto farà da titolo alla seconda riga-->
+                                      <!--Scope serve a dire in quale posizione il titolo deve essere messo-->
+                                      <!--Usare th per titolare le tabelle permette poi una migliore personalizzazione usando css-->
+            </tr>
+
+           <tr>
+               <td colspan="2">testo</td><!--colspan mi serve ad indicare quante colonne deve occupare questo particolare oggetto-->
+           </tr>  
+          
+           <tr>
+               <td rowspan="2">testo</td><!--Mi dice quante righe deve occupare questo particoalre oggetto-->
+           </tr>
+      
+        </table>
+
+        <table> <!--thead tbody e tfoot Servono a distiungere le varie parti della tabella così da renderle individualmente personalizzabili da css-->
+          
+            <thead><!--thead cotiene i titoli della tabella delle colonne, sotto di essi verrano tutti incolonnati tutti i valori da inserire-->
+                <tr>
+                    <th>titolo1</th>
+                    <th>titolo2</th>
+                    <th>titolo3</th>
+                </tr>
+            </thead>
+
+            <tbody><!--contiene il corpo della tabella-->
+             
+                <tr>
+                    <th>titolo riga1</th>
+                    <td>Valore1</td>
+                </tr>
+            
+                <tr>
+                    <th>titolo riga2</th>
+                    <td>valore2</td>
+                </tr>
+          
+            </tbody>
+          
+            <tfoot> <!--Serve ad inserire gli elementi finali di una tabella, come il totale di tutte le spese magari inserite prima.-->
+              
+                <tr>
+                    <td></td> <!--ci sarà uno spazio vuoto-->
+                    <td>valore finale1</td>
+                    <td>valore finale2</td>
+                </tr>
+
+            </tfoot>
+        </table>
+
+        <!--Nelle vecchie pagine web era possibile indicare con width e altri attributi le dimensioni e le caratteristiche delle tabelle-->
+        <!--Come i bordi o i colori di sfondo-->
+        <!--Oggi queste tipo di operazioni sono effettuate tramite css-->
+        
+    </body>
+</html>

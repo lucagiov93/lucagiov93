@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link href="../Css/960_12_col.css" type="text/css" rel="stylesheet" />
+    <script src="../JavaScript/codice.js"></script>
+   <style type="text/css">
+    
+    *{
+        font-family: Arial,Verdana,sans-serif ;
+        color:#665544;
+       
+    
+    }
+    
+    .Block{
+        float: left;
+        margin-inline-start: 10px;
+        margin-left: 15px;
+    }
+    #bottone{
+        align-content: flex-end ;
+        margin-left: 15px;
+    }
+    span{
+        color: red;
+     
+    }
+
+</style>
+</head>    
+<body>
+    
+        
+        <form action="cactcher.html" method="get">
+                <div id="container">
+                    <div class="Block">
+                        <label>Nome <span class="C.Oblig">*</span> </label>
+                        <br />
+                        <input type="text" id="Nome" required="required"/>
+                    </div>   
+                    
+                    <div class="Block">
+                        <label>Cognome <span class="C.Oblig">*</span></label>
+                        <br />
+                        <input type="text" id="Cognome" required="required"/>
+                    </div>
+                    
+                    <br />
+                    <br />
+                    <br />
+                    <input type="hidden" id="PageHtml" name="page_html" value="submit.html" />
+                    <input type="submit" id="bottone" value="click" onclick="passavalore();" />
+                </div>
+        </form>
+    
+    </body>
+</html>

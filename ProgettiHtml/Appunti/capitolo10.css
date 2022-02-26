@@ -1,0 +1,53 @@
+/*
+L'elemento link di html serve per collegare i file css alla/e pagina/e html relative
+la struttura è questa <link href="Link al file css" type="text/css" rel="stylesheet"
+href è il collegamento al file css, type indica il valore del documento che si sta allegando, 
+rel invece indica la relazione tra la pagina html e il file che si sta collengando, nel caso di collegamento 
+con un file css si deve dare il valore stylesheet.
+
+
+Si può usare anche il css all'interno di html così
+<style type="text/css">
+    
+    codice css
+
+</style>
+
+
+
+*/
+
+/*Selettori: Sono i riferimenti da inserire per dire a quali oggetti di html va applicato il relativo codice css */
+/*pagina 238*/
+
+*{} /* Selettore universale,applica il codice css a tutti gli elementi della pagina */
+ 
+h1{} p{} a{} /*Selettore di tipo, bisogna dire su che tipo deve agire il codice css ed esso verrà applicato a tutti gli elementi col tipo indicato*/
+
+.note{} p.note{} /*Selettore di classe, nel primo caso si applica a tutti gli elementi con quella classe
+                    Nel secondo caso a tutti gli elementi di quel tipo e con quella classe */
+#key{} /*Selettore di id, si andrà ad applicare a l'elemento con quell'id */
+
+li>a{} /*Selettore del figlio, in questo caso si va ad applicare a tutti gli oggetti di quel tipo figli del tipo indicato "li" padre "a" figlio*/
+
+p a {} /*Selettore discendente, individua ogni elemento contenuto nell'elemento indicato anche se non c'è discendenza diretta "p" padre "a" figlio*/
+
+h1+p{} /*Selettore del fratello adiacente: Individua ogni elemento immediatamente adiacente a l'altro 
+        in questo caso indivua tutte le "p" che si trovano subito dopo un "h1"*/
+
+        
+
+/*Nel caso di più selettori identici che agiscono sullo stesso elemento l'ultima sarà quella che avrà effettivamente effetto*/
+
+/*Nel caso di più selettori che agiscono sullo stesso elemento, se ne è presente uno più specifico, sarà esso ad essere applicato*/
+
+/*Si può aggiungere !important per far si che quella regola prevalga su altre che agiscono sullo stesso elemento*/
+
+
+
+/*Ereditarietà*/
+
+
+
+
+

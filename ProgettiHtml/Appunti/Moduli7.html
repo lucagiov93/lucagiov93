@@ -1,0 +1,234 @@
+<html>
+    <body>
+        
+        <form action="Link" method="get/post"> <!--Form contiene i controlli di un modulo, questo elemento deve contenere sempre action, method e id-->
+                                               <!--Action contiene il link al quale si riferirà method per eseguire le operazioni-->
+                                               <!--Method può avere due valori get o post-->
+                                               <!--Il valore get aggiunge i valori del modulo alla fine dell'indirizzo specificato-->
+                                               <!--utile per caselle di ricerca o per prender dati dal server web-->
+                                               
+                                               <!--Il valore post invia i valori all'interno delle intestazioni http-->
+                                               <!--Dovrebbe essere usato nei seguenti casi: Se il modulo deve inviare file, se il modulo deve inviare molti dati-->
+                                               <!--Se i dati inviati devono essere riservati-->
+                                               <!--Se i dati devono essre aggiunti o cancellati da un database-->
+
+            <p>testo</p>
+        </form>
+
+        <form action="Link" method="get/post">
+            <p>
+                testo
+                <input type="text" name="Identifica il controllo String" size="15" maxlength="30" /> <!-- Input viene utilizzato per creare i vari controlli per i moduli-->
+                                                                                                     <!-- L'attributo type determina il tipo di controllo creato in base al valore assegnato-->
+                                                                                                     <!-- Name ha la funzione di id per il testo inviato, fa determinare cos'è il dato inviato -->
+                                                                                                     <!-- maxlength limita il numero di caratteri che si possono inserire nel campo-->
+                                                                                                     <!-- E' un attributo obsoleto, adesso sostituito da css, determinava quanti caratteri risultavano visibili-->
+            
+            </p>
+        </form>
+
+        <form action="link">
+            <p>
+                Username
+                <action type="text" name="username" size="15" maxlength="30" />
+            </p>
+
+            <p>
+                Password
+                <action type="password" name="password" size="15" maxlength="30" /> <!-- il valore password per type fa sì che i caratteri inseriti vengono mascherati-->
+                                                                                    <!-- Nel caso si stiano inviando dati sensibili tra siti, bisogna essere sicuri di star utilizzando il protocollo di sicurezza SSL-->
+            </p>
+        </form>
+
+        <form action="link">
+            <p>testo</p>
+            <textarea name="identificatore" cols="20" rows="4"> <!-- textarea viene utilizzato per inviare più righe di testo-->
+                                                                <!-- tutto ciò contenuto nel tag di textarea di apertura e chiusura viene scritto e caricato all'apertura della pagina-->
+                                                                <!--cols and rows sono degli attributi obsoleti per la gestione delle dimensione della text area-->
+                                                                <!--Attualmente questi valori vengono modificati tramite css-->
+                testo opzionale
+            </textarea>
+        </form>
+
+        <form action="link">
+            <p>
+                testo <!-- titolo per i pulsanti a stile radio-->
+                <input type="radio" name="id" value="Rock" checked="checked"/> <!-- il valore radio di type crea una casella spuntabile, che esclude-->
+                                                                               <!-- tutte le altre radio create, in sostanza si può avere una sola -->
+                                                                               <!-- casella radio spuntata per volta-->
+                                                                               <!-- Name indica il nome del gruppo di pulsanti, lo stesso gruppo di pulsanti-->
+                                                                               <!-- deve avere lo stesso valore name-->
+                                                                               <!-- value serve a differenziare i vari pulsanti dello stesso gruppo tra loro-->
+                                                                               <!-- l'attributo checked indica all'apertura quale valore è selezionato di default, ci può essere un solo valore checked per volta-->
+                                                                               <!-- Con questa type non si possono deselezionare i valori, se si vuole un pulsante deselezionabile bisogna usare una casella selezione-->
+
+                Rock                                                           <!-- nome della parte cliccabile-->
+                
+                <input type="radio" name="id" value="Rock" />
+ 
+                Pop
+ 
+                <input type="radio" name="id" value="Rock" />
+ 
+                Jazz
+                
+        </form>
+
+        <form action="link">
+            <p>
+                testo
+                <input type="checkbox" name="service" value="id" checked="checked" /> <!-- Le caselle checkbox permettono di selezionare o deselezionare più valori-->
+                                                                                      <!-- l'attributo name distingue il gruppo di pulsanti-->
+                                                                                      <!-- value distingue tra loro i pulsanti dello stesso gruppo-->
+                                                                                      <!-- checked mi seleziona una casella di defautl, possono essere tutte checked o nessuna-->
+                testo dell'input
+            </p>
+
+        </form>
+    
+        <form action="link">
+            <p>testo</p>
+            <select name="tipo elemento"> <!-- Select crea un menù a discesa che può contenere due o più elemetni option-->
+                                          <!-- Gli option sono i vari elementi che appaiono all'interno del menù a discesa/tendina-->
+                                          <!-- Name indica il nome di controllo inviato al server-->
+                <option value="ogg1" selected="selected">ogg1</option>  <!-- Option indica le opzioni che l'utente può selezionare, tutte le parole tra i tag di chiusura e apertura di option verrano visualizzati -->
+                                                                        <!-- con l'attributo selected e il valore selected si seleziona un elemento di default, c'è ne può essere solo uno selezionato-->
+                                                                        <!-- Questo tipo di menù non dovrebbre esser utilizzato se l'utente deve vedere tutte le opzioni insieme "e sono tante"-->
+                                                                        
+                <option value="ogg2">ogg2</option>
+                <option value="ogg3">ogg3</option>
+            
+            </select>
+        </form>
+
+        <form action="link">
+            <select name="tipo elemento" size="3" multiple="multiple" > <!--Con l'attributo size si può trasformare una casella in un menù a discesa-->
+                                                                        <!-- Il valore di size determina quanti di questi si possono vedere contemporaneamente-->
+                                                                        <!-- Multiple permette agli utenti di selezionare più elementi-->
+                                                                        <!-- Per selezionare più elementi bisogna usare il comando ctrl da tastiera--> 
+                
+                <option value="ogg1" selected="selected">ogg1</option>  
+                <option value="ogg2">ogg2</option>
+                <option value="ogg3">ogg3</option>
+
+            </select>
+        </form>
+
+        <form action="link" method="post">
+        
+            <p>testo</p>
+            <input type="file" name="identificatore" /> <!--Type file ha l'aspetto di una casella di testo ma è seguita dal pulsante sfoglia-->
+                                                        <!-- Il pulsante sfoglia permette di selezionare un file dal computer-->
+            <input type="submit" value="Upload" />
+        
+        </form>
+        <form action="link" method="post">
+        
+            <p>prova</p>
+            <input type="file" name="identificatore" /> <!--Type file ha l'aspetto di una casella di testo ma è seguita dal pulsante sfoglia-->
+                                                        <!-- Il pulsante sfoglia permette di selezionare un file dal computer-->
+                                                        
+            <input type="submit" value="Submit" />  <!-- Il pulsante submit permette di inviare il modulo al server al link scritto in form-->
+                                                    <!-- E' possibile anche inserire l'attributo name ma non è obligatorio-->
+                                                    <!-- L'attributo value viene usato per indicare il testo all'interno del pulsante di invio-->
+                                                    <!-- Con css è possibile controllare l'aspetto del pulsante di invio-->
+        </form>
+ 
+        <form action="link">
+            <p>testo</p>
+            <input type="text" name="identificatore" />
+            <input type="immge" src="Link immagine" width="larghezza pixel" height="altezza pixel" /> <!--Si può usare una immagine come pulsante di invio-->
+        </form>
+
+        <form action="link">
+            <button> <!-- L'elemento button è stato introdotto per dare maggiore controllo sull'aspetto dei pulsanti, in modo da combinare in maniera semplice immagini e testo-->
+                     <!-- Si possono combinare immagini e testo mettendole all'interno dei tag button-->
+                <img src="link immagine" alt="add" width="larghezza pixel" height="altezza pixel" />
+                testo
+            </button>
+            <input type="hidden" name="identificatore" value="lyrics" /> <!-- Hidden è un controllo nascosto non visibile dall'utente, utile per mandare informazioni, come ad esempio la pagina-->
+                                                                         <!-- sulla quale l'utente sta navigando-->
+        </form>
+
+        <label>Age: <input type="text" name="age" /> </label> <!-- Label serve a legare del testo al l'input selezionato-->
+                                                              <!-- Migliora la visibilità e l'utilizzo dei pulsanti-->
+                                                              <!-- Label può sia contenere al suo interno l'input a cui deve riferirsi-->
+                                                              <!-- Che legarsi ad esso tramite il for-->
+        Gender:
+        <input id="female" type="radio" name="gender" value="f" /> <!-- L'attributo id assegna a quell'imput un indentificatore univoco-->
+        <label for="female">Female</label>                         <!-- L'attributo for assegna la label all'oggetto con l'id che si è messo come valore-->
+        <input id="male" type="radio" name="gender" value="m" />
+        <label for="male">Male</label>
+    
+        <fieldset> <!-- Raggruppa insieme tutti i controlli correlati-->
+                   <!-- I dettagli estetici di fieldset possono essere controllati tramite css-->
+           
+            <legend>Testo</legend> <!-- E' un titolo per il gruppo di moduli raggruppati, e visibile all'utente-->
+            
+            <label> <!-- Se si mette l'input all'interno della Label non c'è bisogno di utilizzare id e for-->
+               Email:
+               <input type="text" name="mail"  />   
+           </label>                         
+           
+           <label>
+               Mobile:
+               <input type="radio" name="mobile"  />
+           </label>
+            
+           <label>
+                Telephone:
+                <input type="radio" name="mobile"  />
+           
+            </label>
+        
+        </fieldset>
+
+        <form action="link" method="post">
+            <label>
+                Username:
+                <input type="text" name="Username" required="required" /> <!-- l'attributo required permette di fare un controllo direttamente su html-->
+                                                                          <!-- così da evitare che il campo sia vuoto, questo controllo alleggerisce il lavoro:-->
+                                                                          <!-- Del server e rende subito evidente agli utenti se ci sono problemi.-->
+            </label>
+            <label>
+                Password:
+                <input type="password" name="Password" required="required" />
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+
+
+        <form action="link" method="post">
+           
+            <label for="depart">Partenza</label>
+            <input type="date" name="depart" id="depart" /> <!-- Il value date per type permette di specificare una data, ma sono supportate solo dal più recente HTML5-->
+            <input type="submit" value="Submit" />
+
+        </form>
+        
+        <form action="link">
+            <p>testo</p>
+            <input type="mail" name="mail" /> <!--Utilizzare il type mail fa si che se il testo inserito non rispetta i canoni per una mail-->
+                                              <!--come avere una @ verrà dato in risposta un errore-->
+            <input type="submit" value="Submit" />
+        </form>
+
+        <form action="link">
+            <p>testo</p>
+            <input type="url" name="website" /> <!--Utilizzare il type url fa si che se il testo inserito non rispetta i canoni per un sito web-->
+                                              
+            <input type="submit" value="Submit" />
+        </form>
+
+        <form action="link">
+            <p>testo</p>
+            <input type="search" name="search" placeholder="testo" /> <!--Il value search è uno speciale elemento per le ricerche-->
+                                                                      <!-- l'attributo placeholder è utilizzabile per qualsiasi input testuale, il suo valore verrà visualizzato finchè:-->
+                                                                      <!-- l'utente non farà click sull'area di testo-->
+                                              
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+
+    
+</html>

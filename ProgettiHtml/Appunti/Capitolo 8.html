@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Indica la versione di htmol che si sta usando-->
+<html>
+    <body>
+    <p id="id">testo</p>   <!-- attributo id serve per identificare in maniera univoca un elemento, utile per assegnargli effetti css-->
+    <p class="MultiId">testo</p> <!--Class è un attributo per indentificare un gruppo di elementi che si vuole modificare allo stesso modo tramite css-->
+
+    <!-- Elementi di blocco-->
+    <!-- Sono elementi che compaiono sempre all'inizio di una nuova riga-->
+    
+    <h#></h#> <!--Tutti i numeri di h che vanno da 1 a 6-->
+    <p></p>
+    <ul></ul>
+    <li></li>
+ 
+    <!--elementi di linea-->
+    <!--Sono elementi fatti per rimanere sulla stessa riga degli elementi adiacenti-->
+
+    <a></a>
+    <b></b>
+    <em></em>
+    <img/>
+   
+    <!-- raggruppamento testo de elementi in un blocco-->
+    
+    <div></div> <!--L'elemento div consente di raggruppare un insieme di elementi in modo da formare un unico blocco-->
+                <!--Utilizzando insieme l'elemento div con id o class si può assegnare a quel gruppo gli stessi stili css-->
+                <!--Div è anche più comodo per raggruppare blocchi -->
+
+    <p>testo <span class="id">testo</span></p> <!--Span è l'equivalente in linea di div, serve per distinguere degli elementi di testo altrimenti distinguibili, e assegnandogli un identificatore utile per css-->
+
+
+    <iframe width="pixel" height="pixel" src="link"></iframe> <!-- Permette di ritagliare uno spazio delle dimensioni specificate in cui caricare una pagina esterna con il link inserito in src-->
+        
+    <iframe  
+    width="pixel" 
+    height="pixel" 
+    src="link"
+    frameborder="0"
+    scrolling="no"
+    ></iframe> <!-- width e height specificano di quanti pixel deve essere la finestra-->
+               <!-- src è il link alla pagina esterna-->
+               <!--scrolling indica se bisogna avere le sbarre di scorrimento nel caso in cui il frame fosse più grande dello spazio a lui predisposto-->
+
+    <meta name="value" content="value"/> <!-- E' contenuto nell'elemento head e contiene informazioni relative alla pagina web--> 
+             <!-- Serve a comunicare informazioni anche al motore di ricerca-->
+             <!-- viene utilizzato con una combinazione degli attributi name e content-->
+             <!--L'attributo name serve a definire lo scopo del tipo di informazioni mentre content contiene tale informazione-->
+             <!-- I più comuni valori assegnati a name sono description e robots-->
+             <!-- Description è il value delle informazioni che poi vengono controllate dal motore di ricerca per trovare le pagine utili -->
+             <!-- Robots indica ai motori di ricerca se possono o no caricare questa pagina-->
+             <!-- E assegnando poi a content il valore noindex se la pagine non deve essere aggiunta-->
+             <!-- Con il valore nofollow la pagina viene aggiunta escludendo però le pagine alle quali rimanda questa pagina -->
+
+    <meta http-equiv="value" content="value" /> <!-- meta utilizza a coppie anche gli attributi http-equiv e content-->
+                                                <!-- i value che si possono assegnare a http-equiv sono author pragma ed expires-->
+                                                <!-- Author si specifica l'autore della pagina-->
+                                                <!-- Pragma impedisce al browser di attivare la gestione cache della pagina, ovvero di memorizzarla localmente per risparmiare tempo nelle successive visite-->
+                                                <!-- Aggiungendo a content il value no-cache-->
+                                                <!-- Expires indica se la pagina ha una data di scandenza e quindi i browser non la memorizzeranno più nelle cache-->
+                                                <!-- il formato data da inserire in conten è questo a seguire Fri"giorno", 04 apr 2014 "giorno mese anno" 23:59:59 GMT-->
+    <!--Simboli di escape pagina 194 libro-->
+    <!--Per far apparire determinati simboli nel testo bisogna usare questi codici-->
+    per "minore di" &lt o &#60
+    per  "maggiore di" &gt &#62
+    per & &amp o &#038
+    per le " &quot o &#34
+    per le monete &tipo_moneta esempio € &euro
+    
+    per la x &times o &#215
+    per la divisone &divide o &#247
+    </body>    
+</html>
