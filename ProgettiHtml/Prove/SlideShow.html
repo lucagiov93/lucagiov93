@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../Css/slideshow.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="head">
+    <div class="studio-logo">
+        <span>&#9739</span> <h3>Studio Podologico Tittarelli</h3>
+     </div>
+    <div class="menù">
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Trattamenti</a>
+        <a href="#">Contatti</a>
+    </div>
+</div>
+<div class="bar">
+
+</div>
+
+<div class="body"></div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+ 	    <img src="../StudioPodologico/Immagini/HomePage/Deer head.jpg" >
+    </div>
+    <div class="mySlides fade">
+	    <img src="../StudioPodologico/Immagini/HomePage/Logo Design.jpg" >
+    </div>
+    <div class="mySlides fade">
+ 	    <img src="../StudioPodologico/Immagini/HomePage/logo.jpg" >
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span> 
+   <span class="dot" onclick="currentSlide(2)"></span> 
+   <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+    var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          
+          slides[slideIndex-1].style.display = "block";  
+        
+        }
+</script>
+</div>
+
+<div class="bar">
+
+</div>
+
+<div class="foot">
+    <div class="member">
+        <h5>Dr. Andrea Tittarelli</h5>
+        <p>Info</p>
+    </div>
+    <div class="member">
+        <h5>Dr. Valentina Tittarelli</h5>
+        <p>Info</p>
+    </div>
+    <div class="location">
+        <h5>Studio</h5>
+        <p>via</p>
+    </div>
+</div>
+
+
+
+</body>
+</html> 

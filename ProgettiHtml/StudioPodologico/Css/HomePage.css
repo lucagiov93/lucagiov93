@@ -1,109 +1,102 @@
-body{
-    overflow: scroll;
-}
 
-h1{
-    display: inline;
-}
-
-div.head
+.w3-center 
 {
-    top: 0;
-    position: fixed;
-    height: 5%;
-    width: 100%;
-    text-align: center;
-    border-style: solid;
-    border-color: blue white blue white;
-    background-color: whitesmoke;
+    display:inline-block;
+    width:auto;
+    text-align:center;
 }
 
-div.title
+
+.w3-content
 {
-    display: inline;
-    text-align: center;
-    margin-right: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
 }
 
-div.menù
+
+.w3-display-container
 {
-    
-    margin-top: auto;
-    display: inline;
-    margin-bottom: auto;
+    position:relative;
 }
 
-div>a
+.w3-display-container:hover 
 {
-    margin-left: 15px;
+    display:block;
 }
-
-
-
-div.immagine>img
+.w3-display-container:hover 
 {
-    z-index: -1;
-    height: 500px;
-    width: 100%;
+    display:inline-block;
 }
 
-div.central
+.mySlides 
 {
-   background-color: aquamarine;   
-   height: 300px;
-   width: 400px;
-   margin-left: auto;
-   margin-right: auto;
-
+    display:none;
 }
 
-.frame1, .frame2 
+.w3-button
 {
-  float: left;
-  display: inline;
-  
-   
-  margin: 10px;
-  
-  
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;cursor:pointer;
+    white-space:nowrap
 }
 
-
-
-.container
+.w3-button
 {
-   height: 220px;
-   width: 630px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+    white-space:normal;
 }
-.img-frame>img
+.w3-button:disabled
 {
-    float: left;
-    height: 200px;
-    width: 200px;   
-    padding-left: 10px; 
+    cursor:not-allowed
+    ;opacity:0.3
+}
+.w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child
+{
+    background-color:#ccc;
+    color:#000;
 }
 
-.container-foot
+.w3-button:hover
 {
-    height: 100px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    color:#000!important;
+    background-color:#ccc!important;
 }
 
-button
+.w3-black
 {
-    height: 30px;
-    width: 100px;
-    background-color: blueviolet;
-    border: none;
+    color:#fff!important;
+    background-color:#000!important;
 }
 
-button:hover{
-    background-color: aquamarine;
-    
+.w3-display-left
+{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+}
+.w3-display-right
+{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
 }
