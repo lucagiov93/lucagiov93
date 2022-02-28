@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <link href="../Css/head.css" type="text/css" rel="stylesheet" />
+    <body>
+        <div class="head">
+            <div class="studio-logo">
+                <span>&#9739</span> <h3>Studio Podologico Tittarelli</h3>
+             </div>
+            <div class="menù">
+                <a href="#">Home</a>
+                <a href="#">Chi Siamo</a>
+                <a href="#">Trattamenti</a>
+                <a href="#">Contatti</a>
+            </div>
+        </div>
+
+        <div class="bar">
+
+        </div>
+        
+        <div class="body"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                 <img src="../StudioPodologico/Immagini/HomePage/FirstFeet.jpg" >
+            </div>
+            <div class="mySlides fade">
+                <img src="../StudioPodologico/Immagini/HomePage/SeconFeet.jpg" >
+            </div>
+            <div class="mySlides fade">
+                 <img src="../StudioPodologico/Immagini/HomePage/ThirdFeet.jpg" >
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <script>
+                var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      
+                      slides[slideIndex-1].style.display = "block";  
+                    
+                    }
+            </script>
+        </div>
+    </body>
+</html>

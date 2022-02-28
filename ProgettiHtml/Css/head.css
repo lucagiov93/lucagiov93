@@ -13,44 +13,51 @@ body
 /*Parte relativa al menù */
 .head
 {
-    z-index: 1;
-    position: fixed;
+    position: fixed;   
     top: 0px;
     background-color: whitesmoke;
-    height: 35px;
+    height: 85px;
     
     width: 100%;
     
 }
 .studio-logo
 {
- 
-   padding-right: 33%;
-   display: inline;
-   text-align: start;
-   
-   
-}
-.studio-logo>h3
-{
-  margin-top: auto;
-   margin-bottom: auto;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   display: inline;
-   
+    position: absolute;
+    
+    top: 20px;
+    bottom: 20px;
+    
+    left: 20px;
+    height: 30px;
+    width: auto;
 }
 
+.studio-logo>h3
+{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline;
+
+}
+
+
+.studio-logo>img
+{
+    margin-top: auto;
+    size: 10px;
+    margin-bottom: auto;
+}
 .menù
 {
-  
-  padding-left: 34%;
-  
-   
-   display: inline;
-   padding-top: 10%;
-   
-   
+    
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
 }
+
 .menù>a
 {
   
@@ -71,7 +78,7 @@ body
 }
 .bar
 {
-  height: 25px;
+  height: 85px;
   background-color: white;
 }
 
@@ -83,15 +90,16 @@ body
 .mySlides>img 
 {
     vertical-align: middle;
-    
+    height: 700px;
     width:100%;
 }
 
 /* Slideshow container */
 .slideshow-container 
 {
-  
-  max-width: 1000px;
+    background-color: aquamarine;
+  height: 700px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -124,33 +132,4 @@ body
 .prev:hover, .next:hover
 {
   background-color: rgba(0,0,0,0.8);
-}
-
-
-.foot
-{
-  
-  
-  max-height: 200px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.884);
-  text-align: center;
-  bottom: 0px;
-}
-
-h5 
-{
-  color: white;
-  text-align: start;
-}
-
-p
-{
-  color:gainsboro;
-} 
-
-.member, .location
-{
-  display: inline-block;
-  padding: 15px;
 }
