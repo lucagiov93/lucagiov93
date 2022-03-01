@@ -4,22 +4,48 @@
     <body>
 <div class="hs-wrapper">
 
-	<img src="../Immagini/HomePage/Deer head.jpg" alt="image01"/>
-	<img src="../Immagini/HomePage/FirstFeet.jpg" alt="image02"/>
-	<img src="../Immagini/HomePage/istockphoto-1035676256-170667a.jpg" alt="image03"/>
-	<img src="../Immagini/HomePage/Logo Design.jpg" alt="image04"/>
-	<img src="../Immagini/HomePage/logo.jpg" alt="image05"/>
-	<img src="../Immagini/HomePage/SeconFeet.jpg" alt="image06"/>
-	<img src="../Immagini/HomePage/ThirdFeet.jpg" alt="image07"/>
-	<div class="hidden"></div>
+	<img class="mySlide" src="../Immagini/HomePage/Deer head.jpg" alt="image01"/>
+	<img class="mySlide" src="../Immagini/HomePage/FirstFeet.jpg" alt="image02"/>
+	<img class="mySlide" src="../Immagini/HomePage/istockphoto-1035676256-170667a.jpg" alt="image03"/>
+	<img class="mySlide" src="../Immagini/HomePage/Logo Design.jpg" alt="image04"/>
+	<img class="mySlide" src="../Immagini/HomePage/logo.jpg" alt="image05"/>
+	<img class="mySlide" src="../Immagini/HomePage/SeconFeet.jpg" alt="image06"/>
+	<img class="mySlide" src="../Immagini/HomePage/ThirdFeet.jpg" alt="image07"/>
+	
+    <div class="hidden">
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     
-    <div class="bar">
-    </div>
-    <p>ciao</p>
-    <p class="b">Sono luca</p>
+    <script>
+        var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlide");
+              
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+            
+            }
+    </script>
 </div>
+    
+    
+
     </body>
 </html>
