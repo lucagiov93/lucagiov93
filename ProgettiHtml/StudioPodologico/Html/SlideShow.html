@@ -38,11 +38,7 @@
 
 </div>
 
-<div style="text-align:center">
-   <span class="dot" onclick="currentSlide(1)"></span> 
-   <span class="dot" onclick="currentSlide(2)"></span> 
-   <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+
 <script>
     var slideIndex = 1;
         showSlides(slideIndex);
@@ -59,7 +55,8 @@
           var i;
           var slides = document.getElementsByClassName("mySlides");
           
-          if (n > slides.length) {slideIndex = 1}    
+          if (n > slides.length) {slideIndex = 1}  
+          
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
               slides[i].style.display = "none";  
@@ -74,7 +71,7 @@
 <div class="foot">
     <div class="member">
         <h5>Dr. Andrea Tittarelli</h5>
-        <p>Info</p>
+        <p id="demo">Info</p>
     </div>
     <div class="member">
         <h5>Dr. Valentina Tittarelli</h5>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../Css/HomePageFake.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="head">
+    <div class="studio-logo">
+        <span>&#9739</span> <h3>Studio Podologico Tittarelli</h3>
+     </div>
+    <div class="menù">
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Trattamenti</a>
+        <a href="#">Contatti</a>
+    </div>
+</div>
+<div class="bar">
+
+</div>
+
+<div class="slideshow-container">
+    <div class="slideshow-inner">
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/FirstFeet.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
+        
+      </div>
+    
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/SeconFeet.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+        
+      </div>
+    
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/ThirdFeet.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+       
+      </div>
+    
+      </div>
+    
+    
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
+    <br/>
+    
+    
+    <div style='text-align: center;'>
+      <span class="dot" onclick='currentSlide(1)'></span>
+      <span class="dot" onclick='currentSlide(2)'></span>
+      <span class="dot" onclick='currentSlide(3)'></span>
+      <span class="dot" onclick='currentSlide(4)'></span>
+    </div>
+    
+    </div>
+
+<script>
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 2000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 2000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 2000);
+}
+</script>
+</div>
+
+<div class="bar">
+
+</div>
+
+<div class="foot">
+    <div class="member">
+        <h5>Dr. Andrea Tittarelli</h5>
+        <p>Info</p>
+    </div>
+    <div class="member">
+        <h5>Dr. Valentina Tittarelli</h5>
+        <p>Info</p>
+    </div>
+    <div class="location">
+        <h5>Studio</h5>
+        <p>via</p>
+    </div>
+</div>
+
+
+
+</body>
+</html> 

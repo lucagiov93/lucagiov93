@@ -75,6 +75,9 @@ body
 {
     size: 10px;
 }
+
+/*Fine parte menù */
+
 .bar
 {
   height: 85px;
@@ -91,6 +94,11 @@ body
     vertical-align: middle;
     height: 800px;
     width:100%;
+}
+
+.slideshow-inner:hover ~ .prev, .slideshow-inner:hover ~ .next
+{
+    opacity: 1;
 }
 
 /* Slideshow container */
@@ -117,6 +125,7 @@ body
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  opacity: 0;
 }
 
 /* Position the "next button" to the right */
@@ -130,7 +139,10 @@ body
 .prev:hover, .next:hover
 {
   background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+  
 }
+
 
 
 .foot

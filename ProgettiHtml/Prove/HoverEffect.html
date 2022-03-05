@@ -3,46 +3,71 @@
     <link href="../Css/HoverEffect.css" type="text/css" rel="stylesheet" />
     <body>
 <div class="hs-wrapper">
-
-	<img class="mySlide" src="../Immagini/HomePage/Deer head.jpg" alt="image01"/>
-	<img class="mySlide" src="../Immagini/HomePage/FirstFeet.jpg" alt="image02"/>
-	<img class="mySlide" src="../Immagini/HomePage/istockphoto-1035676256-170667a.jpg" alt="image03"/>
-	<img class="mySlide" src="../Immagini/HomePage/Logo Design.jpg" alt="image04"/>
-	<img class="mySlide" src="../Immagini/HomePage/logo.jpg" alt="image05"/>
-	<img class="mySlide" src="../Immagini/HomePage/SeconFeet.jpg" alt="image06"/>
-	<img class="mySlide" src="../Immagini/HomePage/ThirdFeet.jpg" alt="image07"/>
+  
+	<img class="mySlides" id="try1"  src="../Immagini/HomePage/Deer head.jpg" alt="image01"/>
+	<img class="mySlides" id="try2"  src="../Immagini/HomePage/FirstFeet.jpg" alt="image02"/>
+	<img class="mySlides" id="try3"  src="../Immagini/HomePage/istockphoto-1035676256-170667a.jpg" alt="image03"/>
+	<img class="mySlides" id="try4"  src="../Immagini/HomePage/Logo Design.jpg" alt="image04"/>
+	<img class="mySlides" id="try5"  src="../Immagini/HomePage/logo.jpg" alt="image05"/>
+	<img class="mySlides" id="try6"  src="../Immagini/HomePage/SeconFeet.jpg" alt="image06"/>
+	<img class="mySlides" id="try7"  src="../Immagini/HomePage/ThirdFeet.jpg" alt="image07"/>
 	
     <div class="hidden">
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <p id="demo">Testo</p>
     <script>
-        var slideIndex = 1;
-            showSlides(slideIndex);
+      var slideIndex = 1;
+          
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
             
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
+            if (n > slides.length) {slideIndex = 1}  
             
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
+            if (n < 1) {slideIndex = slides.length}
             
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlide");
-              
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              
-              slides[slideIndex-1].style.display = "block";  
             
-            }
-    </script>
+            if(slideIndex==1)
+            onmouseo
+          
+          }
+  </script>
 </div>
     
     
