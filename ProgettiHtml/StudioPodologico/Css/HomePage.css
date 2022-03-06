@@ -22,6 +22,8 @@ body
     width: 100%;
     
 }
+
+/* Barra del menù con nome studio e navigazione*/
 .studio-logo
 {
     position: absolute;
@@ -31,7 +33,7 @@ body
     height: 30px;
     width: auto;
 }
-
+/*Nome dello studio, in cui cambiare il font del testo*/
 .studio-logo>h3
 {
     
@@ -42,13 +44,14 @@ body
 
 }
 
-
+/*Immagine dello studio*/
 .studio-logo>img
 {
     margin-top: auto;
     size: 10px;
     margin-bottom: auto;
 }
+/*Box per il menù di navigazione*/
 .menù
 {
     
@@ -57,40 +60,47 @@ body
     top: 30px;
     bottom: 20px;
 }
+/*Link del menù di navigazione*/
 .menù>a
 {
   
-  text-decoration: none;
+  text-decoration: none;  /*Per modificare il classico stile che ha di default a */
   color: #000;
   transition: 0.5s;
 }
-
+/*Cambio di colore quando si passa sopra i link di navigazione*/
 .menù>a:hover
 {
    color: royalblue;
    
 }
+/*Fine parte menù */
 
-.studio-logo>img
-{
-    size: 10px;
-}
+
+/*Inizio parte centrale*/
+
+/*Stacco invisibile per dare spazio alle immagini*/
 .bar
 {
   height: 85px;
   background-color: white;
 }
-
+/*Serve per fare il carosello*/
 .mySlides 
 {
     display: none;
 }
-
+/*Taglia delle immagini*/
 .mySlides>img 
 {
     vertical-align: middle;
     height: 800px;
     width:100%;
+}
+/*Comparsa dei pulsanti quando si passa sopra le immagini*/
+.slideshow-inner:hover ~ .prev, .slideshow-inner:hover ~ .next
+{
+    opacity: 1;
 }
 
 /* Slideshow container */
@@ -117,6 +127,7 @@ body
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  opacity: 0;
 }
 
 /* Position the "next button" to the right */
@@ -130,31 +141,39 @@ body
 .prev:hover, .next:hover
 {
   background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+  
 }
+/*Fine parte centrale*/
 
-
+/*Inizio parte finale*/
+/*Box parte finale*/
 .foot
 {
   
   
+  margin-top: 1px;
   max-height: 200px;
+  display: block;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.884);
   text-align: center;
   bottom: 0px;
+  
 }
-
+/* Titoli nella parte finale*/
 h5 
 {
   color: white;
   text-align: start;
 }
-
+/*Testo nella parte finale*/
 p
 {
   color:gainsboro;
 } 
 
+/*Allineamento dei vari blocchi finali*/
 .member, .location
 {
   display: inline-block;
