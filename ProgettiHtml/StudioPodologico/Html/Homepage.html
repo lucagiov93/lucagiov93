@@ -12,60 +12,57 @@
      </div>
     <div class="menù">
         <a href="#">Home</a>
-        <a href="#">Chi Siamo</a>
-        <a href="#">Trattamenti</a>
-        <a href="#">Contatti</a>
+        <a href="../Html/Chi_Siamo.html">Chi Siamo</a>
+        <a href="../Html/Trattamenti.html">Trattamenti</a>
+        <a href="../Html/Contatti.html">Contatti</a>
     </div>
 </div>
 <div class="bar">
 
 </div>
 
-<div class="body"></div>
 <div class="slideshow-container">
-    <div class="mySlides">
-        <img src="../Immagini/HomePage/FirstFeet.jpg" >
-   </div>
-   <div class="mySlides">
-       <img src="../Immagini/HomePage/SeconFeet.jpg" >
-   </div>
-   <div class="mySlides">
-        <img src="../Immagini/HomePage/ThirdFeet.jpg" >
-   </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-
-<script>
-    var slideIndex = 1;
-        showSlides(slideIndex);
+    <div class="slideshow-inner">
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/FirstFeet.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
         
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
+      </div>
+    
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/SeconFeet.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
         
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          
-          if (n > slides.length) {slideIndex = 1}  
-          
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          
-          slides[slideIndex-1].style.display = "block";  
-        
-        }
-</script>
+      </div>
+    
+      <div class="mySlides fade">
+    
+        <img  src='../Immagini/HomePage/ThirdFeet.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+       
+      </div>
+    
+      </div>
+    
+    
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       
+        <div style='text-align: center;'>
+          <span class="dot" onclick='currentSlide(1)'></span>
+          <span class="dot" onclick='currentSlide(2)'></span>
+          <span class="dot" onclick='currentSlide(3)'></span>
+          <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
+    </div>
+    <br/>
+    
+    
+    
+    
+    </div>
+
+<script src="../JavaScript/HomePage.js"></script>
 </div>
 
 <div class="bar">
