@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <a href="../WebSite/Contenuti.html">Contenuti</a>
+        <div class="Add">
+            
+            <textarea id="textAdd" cols="20" rows="10">Inserisci il testo...</textarea>
+            <select id="VideoN" name="N.Video">
+                <option value="1">Video 1</option>
+                <option value="2">Video 2</option>
+                <option value="3">Video 3</option>
+            </select>
+            <input id="link" type="text" name="link" size="15" maxlength="50" />
+            
+        </div>
+            <button onclick="Hola()">Try it</button>
+
+            <button onclick="cancella()">remove</button>
+
+<script>
+function Hola() {
+    
+    var value=document.getElementById("VideoN").value;
+    localStorage.setItem("Nvid",value);
+    
+    
+        if(value=="1"){
+        
+            alert("Hello! ci sono entrato 1");
+            var text=document.getElementById("textAdd").value
+            var y=document.getElementById("link").value;
+            y="https://www.youtube.com/embed/" + y;
+            localStorage.setItem("link1",y);
+            localStorage.setItem("testo1",text);
+            document.getElementById("link").value="";
+        }
+       else if(value=="2")
+        {
+            alert("Hello! ci sono entrato 2");
+            var text=document.getElementById("textAdd").value
+            var y=document.getElementById("link").value;
+            y="https://www.youtube.com/embed/" + y;
+            localStorage.setItem("link2",y);
+            localStorage.setItem("testo2",text);
+            document.getElementById("link").value="";
+        }
+        else if(value=="3")
+        {
+        
+            alert("Hello! ci sono entrato 3");
+            var text=document.getElementById("textAdd").value
+            var y=document.getElementById("link").value;
+            y="https://www.youtube.com/embed/" + y;
+            localStorage.setItem("link3",y);
+            localStorage.setItem("testo3",text);
+            document.getElementById("link").value="";
+        }
+    }
+   
+    function cancella() {
+        alert("Hello! ci sono entrato 4");
+        localStorage.removeItem("link1");
+        localStorage.removeItem("link2");
+        localStorage.removeItem("link3");
+    }
+
+
+</script>
+    </body>
+</html>

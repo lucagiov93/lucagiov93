@@ -1,0 +1,138 @@
+* 
+{
+    box-sizing: border-box
+}
+
+body
+ {
+     font-family: Verdana, sans-serif;
+     margin:0;
+  }
+
+
+/*Parte relativa al menù */
+.head
+{
+    z-index: 1;
+    position: fixed;   
+    top: 0px;
+    background-color: whitesmoke;
+    height: 85px;
+    
+    width: 100%;
+    
+}
+
+/* Barra del menù con nome studio e navigazione*/
+.logo
+{
+    position: absolute;
+    top: 30px;
+    bottom: 20px;
+    left: 20px;
+    height: 30px;
+    width: auto;
+}
+/*Nome dello studio, in cui cambiare il font del testo*/
+.logo>h3
+{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*Immagine dello studio*/
+.logo>img
+{
+    margin-top: auto;
+    size: 10px;
+    margin-bottom: auto;
+}
+/*Box per il menù di navigazione*/
+.menù
+{
+    
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    bottom: 20px;
+}
+/*Link del menù di navigazione*/
+.menù>a
+{
+  
+  text-decoration: none;  /*Per modificare il classico stile che ha di default a */
+  color: #000;
+  transition: 0.5s;
+}
+/*Cambio di colore quando si passa sopra i link di navigazione*/
+.menù>a:hover
+{
+   color: royalblue;
+   
+}
+/*Fine parte menù */
+
+
+/*Inizio parte centrale*/
+/*Stacco invisibile per dare spazio alle immagini*/
+.bar
+{
+  height: 85px;
+  background-color: white;
+}
+/*Fine parte centrale */
+/*Inizio parte finale*/
+.foot
+{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.884);
+   color: white;
+   text-align: center;
+}
+
+/* Titoli nella parte finale*/
+
+/*Testo nella parte finale*/
+.foot>p
+{
+  color:gainsboro;
+} 
+
+/*Allineamento dei vari blocchi finali*/
+.contact,.social, .partner
+{
+  display: inline-block;
+  padding: 15px;
+  color:white;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
